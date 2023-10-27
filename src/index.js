@@ -1,7 +1,7 @@
 
-import vue3dLoader from './3dLoader/vue3dLoader.vue'
+import vue3dPreviewer from './3dLoader/vue3dLoader.vue'
 import * as Three from 'three';
-const components = [vue3dLoader]
+const components = [vue3dPreviewer]
 
 // vue install function
 const install = function (Vue) {
@@ -20,4 +20,4 @@ export default {
   ...components
 }
 
-export { vue3dLoader, Three }
+export { vue3dPreviewer, Three }

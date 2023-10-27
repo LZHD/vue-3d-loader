@@ -1,11 +1,12 @@
 {
-  "name": "vue-3d-loader",
-  "version": "1.3.0",
+  "name": "vue-3d-previewer",
+  "version": "0.0.1",
   "private": false,
-  "main": "dist/vue-3d-loader.umd.min.js",
+  "main": "dist/vue-3d-previewer.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib ./src/index.js --name vue-3d-loader --dest dist",
+    "build": "vue-cli-service build --target lib ./src/index.js --name vue-3d-previewer --dest dist",
+    "release": "npm run build && npm publish --access public",
     "build:example": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -13,19 +14,19 @@
     "dist": "dist"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "three": "^0.142.0",
-    "vue": "^2.6.14"
+    "core-js": "~3.8.3",
+    "three": "~0.142.0",
+    "vue": "~2.6.14"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
+    "@babel/core": "~7.23.2",
+    "@babel/eslint-parser": "~7.22.15",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "eslint": "~7.32.0",
+    "eslint-plugin-vue": "~8.0.3",
+    "vue-template-compiler": "~2.6.14"
   },
   "eslintConfig": {
     "root": true,
@@ -43,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/king2088/vue-3d-loader.git"
+    "url": "https://github.com/LZHD/vue-3d-previewer.git"
   },
   "bugs": {
-    "url": "https://github.com/king2088/vue-3d-loader/issues"
+    "url": "https://github.com/LZHD/vue-3d-previewer/issues"
   },
-  "homepage": "https://github.com/king2088/vue-3d-loader",
+  "homepage": "https://github.com/LZHD/vue-3d-previewer",
   "keywords": [
     "vue",
     "3d",
