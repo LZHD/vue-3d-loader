@@ -1,6 +1,6 @@
 {
   "name": "vue-3d-previewer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/vue-3d-previewer.umd.min.js",
   "scripts": {
