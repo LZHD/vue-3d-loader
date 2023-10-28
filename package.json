@@ -1,11 +1,17 @@
 {
   "name": "vue-3d-previewer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "dist/vue-3d-previewer.umd.min.js",
+  "unpkg": "dist/vue-3d-previewer.min.js",
+  "jsdelivr": "dist/vue-3d-previewer.min.js",
+  "description": "Vue 3d viewer based on threeJS",
   "scripts": {
+    "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib ./src/index.js --name vue-3d-previewer --dest dist",
+    "build": "npm run build:lib && npm run build:wc",
+    "build:lib": "vue-cli-service build --target lib ./src/index.js --name vue-3d-previewer --dest dist",
+    "build:wc": "vue-cli-service build --target wc --no-clean ./src/index.js --name vue-3d-previewer --dest dist",
     "release": "npm run build && npm publish --access public",
     "build:example": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -14,9 +20,7 @@
     "dist": "dist"
   },
   "dependencies": {
-    "core-js": "~3.8.3",
-    "three": "~0.142.0",
-    "vue": "~2.6.14"
+    "three": "~0.142.0"
   },
   "devDependencies": {
     "@babel/core": "~7.23.2",
@@ -24,8 +28,10 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "core-js": "~3.8.3",
     "eslint": "~7.32.0",
     "eslint-plugin-vue": "~8.0.3",
+    "vue": "~2.6.14",
     "vue-template-compiler": "~2.6.14"
   },
   "eslintConfig": {
