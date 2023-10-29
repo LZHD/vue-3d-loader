@@ -1,6 +1,6 @@
 {
   "name": "vue-3d-previewer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "main": "dist/vue-3d-previewer.umd.min.js",
   "unpkg": "dist/vue-3d-previewer.min.js",
@@ -11,7 +11,7 @@
     "serve": "vue-cli-service serve",
     "build": "npm run build:lib && npm run build:wc",
     "build:lib": "vue-cli-service build --target lib ./src/index.js --name vue-3d-previewer --dest dist",
-    "build:wc": "vue-cli-service build --target wc --no-clean ./src/index.js --name vue-3d-previewer --dest dist",
+    "build:wc": "vue-cli-service build --target wc --no-clean ./src/3dLoader/vue3dLoader.vue --name vue-3d-previewer --dest dist",
     "release": "npm run build && npm publish --access public",
     "build:example": "vue-cli-service build",
     "lint": "vue-cli-service lint"
